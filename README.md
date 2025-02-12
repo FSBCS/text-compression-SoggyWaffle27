@@ -70,9 +70,9 @@ graph TD;
 
 Here are the steps to building a Huffman Tree:
 
-1. Count the frequency of each character
-2. For each character, create a node that stores the character value and its frequency.
-3. Push all of these nodes to a min-ordered priority queue
+1. Count the frequency of each character *
+2. For each character, create a node that stores the character value and its frequency. *
+3. Push all of these nodes to a min-ordered priority queue -
 4. Pop off the two least frequent nodes and create a new node that has these two as left and right children and the combined frequency of both.
 5. Push this new node to the priority queue.
 6. If there is more than one node left on the queue, go back to step 4. Otherwise, the one remaining node is the root of our tree.
