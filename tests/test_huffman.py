@@ -10,11 +10,13 @@ def test_file_compression():
         contents = file.read()
     
     encoding = HuffmanEncoding(contents)
-    
+
     assert len(contents) * 8 > len(encoding.encoded_text)
     
     output_path = os.path.join(os.path.dirname(__file__), '..', 'output', 'test.huff')
+
     file = HuffmanFile(output_path, encoding)
+
     with file:
         file.write()
     
