@@ -1,3 +1,4 @@
+[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=18072515)
 # Huffman Encoding
 
 ## Background
@@ -70,9 +71,9 @@ graph TD;
 
 Here are the steps to building a Huffman Tree:
 
-1. Count the frequency of each character
-2. For each character, create a node that stores the character value and its frequency.
-3. Push all of these nodes to a min-ordered priority queue
+1. Count the frequency of each character *
+2. For each character, create a node that stores the character value and its frequency. *
+3. Push all of these nodes to a min-ordered priority queue -
 4. Pop off the two least frequent nodes and create a new node that has these two as left and right children and the combined frequency of both.
 5. Push this new node to the priority queue.
 6. If there is more than one node left on the queue, go back to step 4. Otherwise, the one remaining node is the root of our tree.
